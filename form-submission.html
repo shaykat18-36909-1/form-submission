@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<hr>
+	<br>
+
+	<form action="/submit.php" target="_self" method="POST">
+		
+		<h3>Basic Information :</h3>
+		
+		<label for="fname">1. First Name : </label>
+		<input type="text" name="fname" id="fname">
+
+		<br>
+		
+		<label for="lname">2. last Name : </label>
+		<input type="text" name="lname" id="lname">
+
+		<br>
+		
+		<label for="name">2. Gender : </label>
+		
+		<br>
+		
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>
+
+		<input type="radio" name="gender" id="female" value="female">
+		<label for="female">Female</label>
+
+		<br>
+		
+		 <label for="dob">3. DoB :</label>
+		 <input type="date" id="dob" name="dob">
+		
+		<br>
+		
+		<!-- Dropdown/Select -->
+		<label for="religion">4. Religion : </label>
+		<select id="religion" name="religion">
+			<option value="Islam">Islam</option>
+			<option value="Chirstianity">Chirstianity</option>
+			<option value="Hinduism">Hinduism</option>
+			<option value="Buddhism">Buddhism</option>
+		</select>
+
+		<br>
+		
+		
+		
+		<h3>Contact Information :</h3>
+		
+		<label for="PresentAddress">1. Present Address : </label>
+		<input type="text" name="PresentAddress" id="PresentAddress">
+
+		<br>
+		
+		<label for="PermanentAddress">2. Permanent Address : </label>
+		<input type="text" name="Permanent Address" id="PermanentAddress">
+		
+		<br>
+		
+		 <label for="phone">3. Phone number:</label>
+		 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> 
+		 
+		<br>
+		
+		 <label for="email">4. Email:</label>
+		 <input type="email" id="email" name="email"> 
+		
+		<br>
+		
+		<a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">5. Personal Website Link</a>
+		<br>
+		
+		<h3> Account Information :</h3>
+		
+		<label for="userid">1. Username : </label>
+		<input type="text" name="userid" id="userid">
+		
+		<br>
+		
+		 <label for="pwd">2. Password:</label>
+		 <input type="password" id="pwd" name="pwd"> 
+		
+		<br>
+		<br>
+		<br>
+		<input type="submit" value="Submit">
+
+	</form>
+
+</body>
+</html>
